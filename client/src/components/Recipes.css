@@ -1,0 +1,108 @@
+.container{
+   
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:1rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+.lander{
+    display: flex;
+    margin: 0rem 5%;
+    flex-direction: row;
+    height: 20rem;
+    width: auto;
+    overflow: hidden;
+}
+.left-subLander{
+    width:50%;
+    height:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.right-subLander {
+    width: 45%; /* Full width of the container */
+    height: inherit; /* Inherits height from parent or content */
+    overflow: hidden;
+    margin-top: 5rem;
+    z-index: -1;
+  
+}
+.movImg{
+    animation: imageAnimation 5s infinite ease-in-out; /* Added duration (5s) for the animation */
+    overflow: hidden;
+    height: inherit;
+    
+}
+.btndiv{
+    padding:1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:1rem;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    cursor: pointer;
+}
+.btn{
+  cursor: pointer;
+    color: orange;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.btn:hover{
+   
+    color: black;
+    border-radius: 0.5rem;
+}
+
+@keyframes imageAnimation {
+    0% {
+        transform: translateX(570px);
+    }
+    50% {
+        transform: translateX(0px); 
+    }
+    100% {
+        transform: translateX(0px); 
+    }
+}
+
+*{
+    text-decoration: none;
+}
+@media screen and (max-width:600px){
+    .btndiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:0.3rem;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        cursor: pointer;
+    }
+    .btn{
+        cursor: pointer;
+         font-size: small;
+          color: orange;
+          font-family:Arial, Helvetica, sans-serif;
+      }
+      .lander{
+        display: none;
+        margin: 0rem 5%;
+        flex-direction: column;
+        height: 25rem;
+        width: auto;
+        overflow: hidden;
+    }
+    .para{
+        display: none;
+    }
+}

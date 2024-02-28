@@ -1,0 +1,30 @@
+img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: 100vh; /* Make the image height 100% of its container */
+    object-fit: contain; 
+}
+.first{
+    width: 100%; /* Adjust the width of the container to fit the image */
+    height: auto
+ 
+}
+.m {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container takes up the full height of its parent */
+  }
+.content{
+    margin-top: 1rem;
+    width: 80%
+}
+@media screen and (max-width:900px){
+    .m {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Ensure the container takes up the full height of its parent */
+      }
+}

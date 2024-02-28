@@ -1,0 +1,79 @@
+.nav{
+    display: none;
+}
+.btn{
+display: none;
+}
+
+.auth{
+    display: none;
+}
+.catagory{
+    display: flex;  
+
+}
+@media screen and (max-width:1800px) {
+    .btn{
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        display:flex;
+        
+    }
+    .nav{
+    margin-left: 90%;
+    flex-direction: column;
+   justify-content: right;
+   text-align: right;
+   width: 10rem;
+    }
+    .tabs{
+        display: none;
+    }
+    .srch{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        right:0rem;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:1200px) {
+    .btn{
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        display:flex;
+    }
+    .nav{
+    margin-left: 85%;
+    flex-direction: column;
+   justify-content: right;
+   text-align: right;
+   width: 10rem;
+    }
+    .tabs{
+        display: none;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .btn{
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        display:flex;
+    }
+    .nav{
+    margin-left: 75%;
+    flex-direction: column;
+   justify-content: right;
+   text-align: right;
+   width: 10rem;
+    }
+    .tabs{
+        display: none;
+    }
+
+}

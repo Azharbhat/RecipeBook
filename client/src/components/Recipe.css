@@ -1,0 +1,21 @@
+.card{
+  width: 20rem;
+  height: 20rem;
+}
+.img{
+    height: 7rem;
+}
+*{
+  text-decoration: none;
+}
+.title{
+  padding-left:5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content{
+  padding:5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+  box-shadow: 5px 5px 15px (rgba(22,44,22,0.6));
+}
