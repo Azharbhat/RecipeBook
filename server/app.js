@@ -8,7 +8,11 @@ import bodyParser from 'body-parser';
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:["https://RecipeBook.vercel.app"],
+  methods:["POST","GET"],
+  credentials:true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '100mb' }));
