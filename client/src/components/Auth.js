@@ -26,7 +26,7 @@ const Auth = () => {
 
   const sendRequest = async (type = "signin") => {
     const res = await axios
-      .post(`http://localhost:8000/api/user/${type}`, {
+      .post(`recipe-book-api-three.vercel.app/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,
