@@ -33,7 +33,7 @@ function Blogs() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/blog");
+        const res = await axios.get("recipe-book-api-three.vercel.app/api/blog");
         
         const data = res.data;
         setBlogs(data?.blogs);
