@@ -12,7 +12,7 @@ const DetailsRecipe = () => {
   useEffect(() => {
     const fetchBlogDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/blog/${id}`);
+        const response = await axios.get(`recipe-book-api-three.vercel.app/api/blog/${id}`);
         setBlog(response.data.blog);
         setLoading(false);
       } catch (error) {
