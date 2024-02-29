@@ -25,7 +25,7 @@ const Blog = ({ title, content, image, userName, isUser, id }) => {
 
   const deleteRequest = async () => {
     const res = await axios
-      .delete(`http://localhost:8000/api/blog/${id}`)
+      .delete(`recipe-book-api-three.vercel.app/api/blog/${id}`)
       .catch((err) => console.log(err));
 
     const data = res.data;
