@@ -9,7 +9,7 @@ import bodyParser from 'body-parser';
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin:["https://RecipeBook.vercel.app"],
+  origin:["https://recipe-book-frontend-nu.vercel.app"],
   methods:["POST","GET"],
   credentials:true
 }));
