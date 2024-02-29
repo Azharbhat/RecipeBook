@@ -48,7 +48,7 @@ const handleImage = (event) => {
     }));
   };
   const sendRequest = async () => {
-    const res = await axios.post("http://localhost:8000/api/blog/add", {
+    const res = await axios.post("recipe-book-api-three.vercel.app/api/blog/add", {
       title: inputs.title,
       content: inputs.content,
       catagorie:inputs.catagorie,
